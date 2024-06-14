@@ -17,9 +17,8 @@
 
 <body>
 
-	<!-- <div class="wrapper"> -->
-
 	<header class="header">
+
 		<div class="header__container">
 			<nav class="header__nav nav-header">
 				<a class="nav-header__logo logo" href="./index.html">Web<span class="logo-colored">Studio</span></a>
@@ -37,7 +36,67 @@
 							111-11-11</a></li>
 				</ul>
 			</address>
+			<button class="header__menu-burger" type="button" aria-label="Open menu">
+				<svg class="header__menu-burger-icon" width="24" height="24">
+					<use href="./images/icons.svg#icon-burger"></use>
+				</svg>
+			</button>
 		</div>
+
+		<div class="header__menu menu-mobile">
+			<button class="menu-mobile__button-close" type="button" aria-label="Close">
+				<svg class="menu-mobile__button-close-icon" width="8" height="8">
+					<use href="./images/icons.svg#icon-close"></use>
+				</svg>
+			</button>
+			<nav class="menu-mobile__nav nav-menu-mobile">
+				<ul class="nav-menu-mobile__list">
+					<li class="nav-menu-mobile__item"><a class="nav-menu-mobile__link active" href="./index.html">Studio</a></li>
+					<li class="nav-menu-mobile__item"><a class="nav-menu-mobile__link" href="">Portfolio</a></li>
+					<li class="nav-menu-mobile__item"><a class="nav-menu-mobile__link" href="">Contacts</a></li>
+				</ul>
+			</nav>
+			<address class="menu-mobile__contacts contacts-menu-mobile">
+				<ul class="contacts-menu-mobile__list">
+					<li class="contacts-menu-mobile__item"><a class="contacts-menu-mobile__link"
+							href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+					<li class="contacts-menu-mobile__item"><a class="contacts-menu-mobile__link" href="tel:+110001111111">+11
+							(000)
+							111-11-11</a></li>
+				</ul>
+			</address>
+			<ul class="menu-mobile__socials">
+				<li class="menu-mobile__socials-item">
+					<a href="#" class="menu-mobile__socials-link" aria-label="Instagram">
+						<svg class="menu-mobile__socials-icon" width="16" height="16">
+							<use href="./images/icons.svg#icon-instagram"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="menu-mobile__socials-item">
+					<a href="#" class="menu-mobile__socials-link" aria-label="Twitter">
+						<svg class="menu-mobile__socials-icon" width="16" height="16">
+							<use href="./images/icons.svg#icon-twitter"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="menu-mobile__socials-item">
+					<a href="#" class="menu-mobile__socials-link" aria-label="Facebook">
+						<svg class="menu-mobile__socials-icon" width="16" height="16">
+							<use href="./images/icons.svg#icon-facebook"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="menu-mobile__socials-item">
+					<a href="#" class="menu-mobile__socials-link" aria-label="Linkedin">
+						<svg class="menu-mobile__socials-icon" width="16" height="16">
+							<use href="./images/icons.svg#icon-linkedin"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+
 	</header>
 
 	<main class="page">
@@ -105,34 +164,35 @@
 				<h2 class="team__title">Our Team</h2>
 				<ul class="team__list">
 					<li class="team__item item-team">
-						<img class="item-team__image" src="./images/team/photo_1.jpg" alt="Mark Guerrero" width="264" height="260">
+						<img class="item-team__image" srcset="./images/team/photo_1.jpg 1x, ./images/team/photo_1@2x.jpg 2x"
+							src="./images/team/photo_1.jpg" alt="Mark Guerrero" width="264" height="260">
 						<div class="item-team__body">
 							<h3 class="item-team__title">Mark Guerrero</h3>
 							<p class="item-team__position">Product Designer</p>
 							<ul class="item-team__socials">
 								<li class="item-team__socials-item">
-									<a href="#" class="item-team__socials-link">
+									<a href="#" class="item-team__socials-link" aria-label="Instagram">
 										<svg class="item-team__socials-icon" width="16" height="16">
 											<use href="./images/icons.svg#icon-instagram"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="item-team__socials-item">
-									<a href="#" class="item-team__socials-link">
+									<a href="#" class="item-team__socials-link" aria-label="Twitter">
 										<svg class="item-team__socials-icon" width="16" height="16">
 											<use href="./images/icons.svg#icon-twitter"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="item-team__socials-item">
-									<a href="#" class="item-team__socials-link">
+									<a href="#" class="item-team__socials-link" aria-label="Facebook">
 										<svg class="item-team__socials-icon" width="16" height="16">
 											<use href="./images/icons.svg#icon-facebook"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="item-team__socials-item">
-									<a href="#" class="item-team__socials-link">
+									<a href="#" class="item-team__socials-link" aria-label="Linkedin">
 										<svg class="item-team__socials-icon" width="16" height="16">
 											<use href="./images/icons.svg#icon-linkedin"></use>
 										</svg>
@@ -142,7 +202,8 @@
 						</div>
 					</li>
 					<li class="team__item item-team">
-						<img class="item-team__image" src="./images/team/photo_2.jpg" alt="Tom Ford" width="264" height="260">
+						<img class="item-team__image" srcset="./images/team/photo_2.jpg 1x, ./images/team/photo_2@2x.jpg 2x"
+							src="./images/team/photo_2.jpg" alt="Tom Ford" width="264" height="260">
 						<div class="item-team__body">
 							<h3 class="item-team__title">Tom Ford</h3>
 							<p class="item-team__position">Frontend Developer</p>
@@ -179,7 +240,8 @@
 						</div>
 					</li>
 					<li class="team__item item-team">
-						<img class="item-team__image" src="./images/team/photo_3.jpg" alt="Camila Garcia" width="264" height="260">
+						<img class="item-team__image" srcset="./images/team/photo_3.jpg 1x, ./images/team/photo_3@2x.jpg 2x"
+							src="./images/team/photo_3.jpg" alt="Camila Garcia" width="264" height="260">
 						<div class="item-team__body">
 							<h3 class="item-team__title">Camila Garcia</h3>
 							<p class="item-team__position">Marketing</p>
@@ -216,7 +278,8 @@
 						</div>
 					</li>
 					<li class="team__item item-team">
-						<img class="item-team__image" src="./images/team/photo_4.jpg" alt="Mark Guerrero" width="264" height="260">
+						<img class="item-team__image" srcset="./images/team/photo_4.jpg 1x, ./images/team/photo_4@2x.jpg 2x"
+							src="./images/team/photo_4.jpg" alt="Mark Guerrero" width="264" height="260">
 						<div class="item-team__body">
 							<h3 class="item-team__title">Daniel Wilson</h3>
 							<p class="item-team__position">UI Designer</p>
@@ -262,8 +325,14 @@
 				<ul class="portfolio__list">
 					<li class="portfolio__item item-portfolio">
 						<div class="item-portfolio__cover-wrap">
-							<img class="item-portfolio__image" src="./images/portfolio/img-1.jpg" alt="Banking App" width="360"
-								height="300">
+							<picture>
+								<source media="(min-width: 768px)"
+									srcset="./images/portfolio/img-1_tablet.jpg 1x, ./images/portfolio/img-1_tablet@2x.jpg 2x">
+								<source media="(max-width: 767px)"
+									srcset="./images/portfolio/img-1.jpg 1x, ./images/portfolio/img-1@2x.jpg 2x">
+								<img class="item-portfolio__image" src="./images/portfolio/img-1.jpg" alt="Banking App" width="288"
+									height="280">
+							</picture>
 							<p class="item-portfolio__cover-text">
 								14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
 								Fruit Ecommerce App · Cloud Storage App
@@ -276,8 +345,14 @@
 					</li>
 					<li class="portfolio__item item-portfolio">
 						<div class="item-portfolio__cover-wrap">
-							<img class="item-portfolio__image" src="./images/portfolio/img-2.jpg" alt="Cashless Payment" width="360"
-								height="300">
+							<picture>
+								<source media="(min-width: 768px)"
+									srcset="./images/portfolio/img-2_tablet.jpg 1x, ./images/portfolio/img-2_tablet@2x.jpg 2x">
+								<source media="(max-width: 767px)"
+									srcset="./images/portfolio/img-2.jpg 1x, ./images/portfolio/img-2@2x.jpg 2x">
+								<img class="item-portfolio__image" src="./images/portfolio/img-2.jpg" alt="Cashless Payment" width="288"
+									height="280">
+							</picture>
 							<p class="item-portfolio__cover-text">
 								14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
 								Fruit Ecommerce App · Cloud Storage App
@@ -290,8 +365,14 @@
 					</li>
 					<li class="portfolio__item item-portfolio">
 						<div class="item-portfolio__cover-wrap">
-							<img class="item-portfolio__image" src="./images/portfolio/img-3.jpg" alt="Meditation App" width="360"
-								height="300">
+							<picture>
+								<source media="(min-width: 768px)"
+									srcset="./images/portfolio/img-3_tablet.jpg 1x, ./images/portfolio/img-3_tablet@2x.jpg 2x">
+								<source media="(max-width: 767px)"
+									srcset="./images/portfolio/img-3.jpg 1x, ./images/portfolio/img-3@2x.jpg 2x">
+								<img class="item-portfolio__image" src="./images/portfolio/img-3.jpg" alt="Meditation App" width="288"
+									height="280">
+							</picture>
 							<p class="item-portfolio__cover-text">
 								14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
 								Fruit Ecommerce App · Cloud Storage App
@@ -304,8 +385,14 @@
 					</li>
 					<li class="portfolio__item item-portfolio">
 						<div class="item-portfolio__cover-wrap">
-							<img class="item-portfolio__image" src="./images/portfolio/img-4.jpg" alt="Taxi Service" width="360"
-								height="300">
+							<picture>
+								<source media="(min-width: 768px)"
+									srcset="./images/portfolio/img-4_tablet.jpg 1x, ./images/portfolio/img-4_tablet@2x.jpg 2x">
+								<source media="(max-width: 767px)"
+									srcset="./images/portfolio/img-4.jpg 1x, ./images/portfolio/img-4@2x.jpg 2x">
+								<img class="item-portfolio__image" src="./images/portfolio/img-4.jpg" alt="Taxi Service" width="288"
+									height="280">
+							</picture>
 							<p class="item-portfolio__cover-text">
 								14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
 								Fruit Ecommerce App · Cloud Storage App
@@ -318,8 +405,14 @@
 					</li>
 					<li class="portfolio__item item-portfolio">
 						<div class="item-portfolio__cover-wrap">
-							<img class="item-portfolio__image" src="./images/portfolio/img-5.jpg" alt="Screen Illustrations"
-								width="360" height="300">
+							<picture>
+								<source media="(min-width: 768px)"
+									srcset="./images/portfolio/img-5_tablet.jpg 1x, ./images/portfolio/img-5_tablet@2x.jpg 2x">
+								<source media="(max-width: 767px)"
+									srcset="./images/portfolio/img-5.jpg 1x, ./images/portfolio/img-5@2x.jpg 2x">
+								<img class="item-portfolio__image" src="./images/portfolio/img-5.jpg" alt="Screen Illustrations"
+									width="288" height="280">
+							</picture>
 							<p class="item-portfolio__cover-text">
 								14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
 								Fruit Ecommerce App · Cloud Storage App
@@ -332,8 +425,14 @@
 					</li>
 					<li class="portfolio__item item-portfolio">
 						<div class="item-portfolio__cover-wrap">
-							<img class="item-portfolio__image" src="./images/portfolio/img-6.jpg" alt="Online Courses" width="360"
-								height="300">
+							<picture>
+								<source media="(min-width: 768px)"
+									srcset="./images/portfolio/img-6_tablet.jpg 1x, ./images/portfolio/img-6_tablet@2x.jpg 2x">
+								<source media="(max-width: 767px)"
+									srcset="./images/portfolio/img-6.jpg 1x, ./images/portfolio/img-6@2x.jpg 2x">
+								<img class="item-portfolio__image" src="./images/portfolio/img-6.jpg" alt="Online Courses" width="288"
+									height="280">
+							</picture>
 							<p class="item-portfolio__cover-text">
 								14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
 								Fruit Ecommerce App · Cloud Storage App
@@ -361,28 +460,28 @@
 				<p class="footer__social-title">Social media</p>
 				<ul class="footer__socials">
 					<li class="footer__socials-item">
-						<a href="#" class="footer__socials-link">
+						<a href="#" class="footer__socials-link" aria-label="Instagram">
 							<svg class="footer__socials-icon" width="24" height="24">
 								<use href="./images/icons.svg#icon-instagram"></use>
 							</svg>
 						</a>
 					</li>
 					<li class="footer__socials-item">
-						<a href="#" class="footer__socials-link">
+						<a href="#" class="footer__socials-link" aria-label="Twitter">
 							<svg class="footer__socials-icon" width="24" height="24">
 								<use href="./images/icons.svg#icon-twitter"></use>
 							</svg>
 						</a>
 					</li>
 					<li class="footer__socials-item">
-						<a href="#" class="footer__socials-link">
+						<a href="#" class="footer__socials-link" aria-label="Facebook">
 							<svg class="footer__socials-icon" width="24" height="24">
 								<use href="./images/icons.svg#icon-facebook"></use>
 							</svg>
 						</a>
 					</li>
 					<li class="footer__socials-item">
-						<a href="#" class="footer__socials-link">
+						<a href="#" class="footer__socials-link" aria-label="Linkedin">
 							<svg class="footer__socials-icon" width="24" height="24">
 								<use href="./images/icons.svg#icon-linkedin"></use>
 							</svg>
@@ -463,8 +562,6 @@
 			</form>
 		</div>
 	</div>
-
-	<!-- </div> -->
 
 </body>
 
