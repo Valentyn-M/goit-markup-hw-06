@@ -1119,6 +1119,7 @@ body {
 		transition: color .25s cubic-bezier(0.4, 0, 0.2, 1);
 	}
 
+	.nav-menu-mobile__link.active,
 	.nav-menu-mobile__link:hover,
 	.nav-menu-mobile__link:focus {
 		color: var(--ocean);
